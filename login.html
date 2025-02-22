@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Untitled_design__6_-removebg-preview.png">
+    <title>Login - HelpingHands</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Links */
+        .signup-link, .login-link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        /* Header styling */
+        header {
+            padding: 20px 0;
+            background: #3CC78F; /* Semi-transparent background */
+            text-align: center;
+        }
+
+        header .logo img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        .signup-link a, .login-link a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover, .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.7); /* Dark footer */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive design for mobile devices */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .login-form, .signup-form {
+                padding: 20px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-area">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="img/Untitled_design__5_-removebg-preview.png" alt="HelpingHands"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+ 
+    <!-- Login Form Section -->
+    <div class="login-section">
+        <div class="container">
+            <div class="login-form">
+                <h2>Login to HelpingHands</h2>
+                <form id="loginForm" action="login.php" method="post">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" required placeholder="Enter your email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" required placeholder="Enter your password" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <p class="signup-link">Don't have an account? <a href="signup.html" style="color: blue;">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer_top">
+            <div class="container">
+                <p>HelpingHands &copy; 2025 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+
+    <script>
+        
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you can handle form submission (e.g., AJAX or form validation)
+            alert("Login Successful!");
+
+            
+            window.location.href = "home.html"; // or the page where the form is
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HelpingHands</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/Untitled_design__6_-removebg-preview.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style>
+        /* Center profile container */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+   
+.main-header-area {
+    width: 100%;
+    text-align: justify;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0px; /* Pushes the main header below the top header */
+}
+
+        .profile-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top: 120px;
+            
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-group {
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .save-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .save-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+      
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/Untitled_design__5_-removebg-preview.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="home.html">home</a></li>
+                                        <li><a href="About.html">About</a></li>
+                                        <li><a href="#">Categories<i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="blooddonation.html">BloodDonation</a></li>
+                                                <li><a href="clothes.html">Clothes</a></li>
+                                                <li><a href="food.html">Food</a></li>
+                                                <li><a href="toys.html">toys</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="profile.html">Profile</a></li>
+                          
+                                    </ul>
+                                </nav>
+                                <div class="Appointment">
+                                    <div class="book_btn d-none d-lg-block">
+                                        
+                                            <a  href="makeadonate.html" class="donate-button">Make a Donate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+</head>
+<body>
+
+    <div class="profile-container">
+        <h2>Profile Page</h2>
+        <div class="input-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="Enter first name">
+        </div>
+        <div class="input-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Enter last name">
+        </div>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email">
+        </div>
+        <div class="input-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter phone number">
+        </div>
+        <button class="save-btn" id="save-btn" onclick="saveProfile()">Save</button>
+    </div>
+
+    
+    <script>
+        function saveProfile() {
+            const firstName = document.getElementById("first-name").value;
+            const lastName = document.getElementById("last-name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+
+            if (firstName === "" || lastName === "" || email === "" || phone === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            alert(`Profile Saved!\n\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nPhone: ${phone}`);
+            
+            // Hide the save button
+            document.getElementById("save-btn").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

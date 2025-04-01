@@ -82,7 +82,7 @@ footer p {
         <div style="text-align: center;" class="container">
             <div class="signup-form"><br><br>
                 <h2>Sign Up for HelpingHands</h2>
-                <form action="signup.php" method="post">
+                <form id="signupForm" action="signup.php" method="post">
                     <br><br><br><br>
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" required placeholder="enter name" title="enter name">
@@ -119,12 +119,11 @@ footer p {
     <!-- JavaScript -->
     <script src="js/main.js"></script>
     <script>
-        document.getElementById('signupForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Handle form validation and submission
-            alert("Sign Up Successful!");
-            window.location.href = "login.html"; 
-        });
+        document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert("Sign Up Successful!");
+    window.location.href = "login.html"; 
+});
     </script>
 </body>
 </html>
